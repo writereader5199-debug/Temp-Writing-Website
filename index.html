@@ -1,0 +1,380 @@
+<html>
+
+<!--Fix the spacing of envelope icon in contact section // center in the empty space of the right corner-->
+
+<head>
+<title>Home ~ Savannah Massey</title>
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<style>
+body {
+    background-color: #4d433d;
+    margin-top: 0px;
+    padding-top: 0px;
+}
+img { max-width: 100%; 
+    height: auto; 
+    display: block;
+}
+.center {
+    display: block;
+    margin: 0 auto;
+}
+.contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    text-align: center;
+    color: #302e2d;
+}
+.contact a { color: #302e2d; text-decoration: none; }
+.contact a:hover { text-decoration: underline; }
+
+a,
+a:link,
+a:visited {
+    color:#302e2d;
+}
+a:hover,
+a:focus {
+    color: #302e2d; 
+    text-decoration: underline;
+}
+.directory {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    text-align: center;
+    color: #302e2d;
+    font-size: large;
+}
+.directory a { color: #302e2d; text-decoration: none; }
+.directory a:hover { text-decoration: underline; }
+
+.bio {
+    text-align: center;
+    text-justify: inter-word; 
+    hyphens: auto;
+}
+.txt {
+    text-align: center;
+}
+.container {
+    position: center;
+    text-align: center;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.overlay-text0 {
+    position: absolute;
+    bottom: -255px;
+    right: 400px;
+    color: #9d958b;
+}
+.overlay-text1 {
+    position: absolute;
+    bottom: 500px;
+    right: 620px;
+    color: #121b00;
+    font-size: small;
+}
+.name-header {
+    text-align: center;
+    /*max-width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+	*/
+	max-width: auto;
+    font-size: 1.5rem;
+	color: #302e2d;
+}
+.color-box {
+    margin-left: 35px;
+    margin-right: 35px;
+    margin-top: 0px;
+}
+.top-box-bg {
+    background-color: #d6cca8;
+    width: 1180px;
+    height: 905px;
+    display: inline-block;
+}
+.snd-box-bg {
+    background-color: #d6cca8;
+    width: 1180px;
+    height: 165px;
+    display: inline-block;
+}
+.wrfeat-box-bg {
+    background-color: #d6cca8;
+    width: 583px;
+    height: 240px;
+    display: inline-block;
+}
+.wrfeat-color-box {
+    margin-left: -42px;
+    margin-right: -42px;
+    margin-top: 0px;
+}
+.wrfeat-txt {
+	margin-left: 15px;
+	margin-right: 15px;
+	margin-top: 15px;
+	color: #302e2d;
+}
+.pfeat-box-bg {
+    background-color: #a8a497;
+    width: 583px;
+    height: 476px;
+    display: inline-block;
+}
+.pfeat-color-box {
+    margin-left: -42px;
+    margin-right: -42px;
+    margin-top: 0px;
+}
+.pfeat-txt {
+	margin-left: 15px;
+	margin-right: 15px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	color: #302e2d;
+}
+.pfeat-img {
+	margin-left: 15px;
+	margin-top: 15px;
+	margin-right: 15px;
+}
+.abt-box-bg {
+    background-color: #302e2d;
+    width: 583px;
+    height: 445px;
+    display: inline-block;
+}
+.ext-box-bg {
+    background-color: #302e2d;
+    width: 583px;
+    height: 445px;
+    display: inline-block;
+}
+.feat-box {
+	display: flex;
+    justify-content: center; /* Horizontally centers content */
+    align-items: center;
+	width: 150px;
+	height: 30px;
+	border: 5px solid #d6cca8;
+	padding: 5px;
+	text-align: center;
+	margin-right: 246px;
+	color: #d6cca8;
+}
+.cont-box {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 150px;
+	height: 30px;
+	border: 5px solid #d6cca8;
+	padding: 5px;
+	text-align: center;
+	color: #d6cca8;
+}
+.abt-img {
+	margin-left: 15px;
+	margin-top: 15px;
+	padding-right: 5px;
+}
+.abt-txt{
+	margin-right: 15px;
+	color: #a8a497;
+	line-height: 1.5;
+	text-align: justify;
+}
+.cont-box-bg {
+	display: inline-block;
+	flex-direction: column;
+	width: 574px;
+	height: 277px;
+	background: #d6cca8;
+}
+.cont-txt {
+	color: #302e2d;
+	margin: 15px;
+	line-height: 1.5;
+	text-align: justify;
+}
+.cont-img {
+	flex: 0 0 150px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	max-width: 150px;
+	height: auto;
+	display: block;
+	margin-right: 65px;
+}
+.overline {
+    font-size: xx-small;
+	line-height: 0.1;
+}
+.columns {
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+}
+.col {
+    flex: 1;
+    min-width: 0; 
+}
+.minicols {
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+}
+.section-divider {
+    border: 0;
+    height: 4px;
+    background: #ae9e8a;
+    margin: 18px 0 18px;
+}
+@media (max-width: 700px) {
+    .columns { flex-direction: column; }
+}
+</style>
+</head>
+
+<body>
+<!--Line1: Contact Info-->
+<div class="top-box-bg color-box">
+    <p><br></p>
+	<div class="contact">
+		<a href="mailto:savannahm.writing@gmail.com">savannahm.writing@gmail.com</a>
+		&emsp;
+		<a href="https://instagram.com/savannahmassey12" target="_blank" rel="noopener">Instagram</a>
+	</div>
+	<p style="line-height: .1;"><br></p>
+
+	<!--Line2: Directory-->
+    <div class="directory">
+		<a href="file:///C:/Users/write/OneDrive/Desktop/WebDesign/Temp%20Page/alt.html">Previous Publications</a>
+		&emsp;|&emsp;
+		<a href="file:///C:/Users/write/OneDrive/Desktop/WebDesign/Temp%20Page/alt.html">Interviews, Readings & Press Releases</a>
+		&emsp;|&emsp;
+		<a href="file:///C:/Users/write/OneDrive/Desktop/WebDesign/Temp%20Page/alt.html">Projects & Portfolios</a>
+	</div>
+	<p style="line-height: .1;"><br></p>
+	<!-- Optional top image (keeps existing header image) -->
+	<div class="container center">
+		<img src="C:\Users\write\Downloads\IMG_2574.jpg" alt="Header image">
+		<div class="overlay-text0">Credits: Amanda Massey</div>
+	</div>
+	
+</div>
+
+<div class="overline"><p><br></p></div>
+
+<div class="snd-box-bg color-box">
+	<div class="name-header bio">
+			<h2><b>Savannah Massey</b></h2>
+			<h3><em>Poet & Artist</em></h3>
+	</div>
+</div>
+
+<div class="overline"><p><br></p></div>
+
+<!--Column 1: Abt sect-->
+<div class="columns">
+	<div class="col bio abt-box-bg color-box">
+		<div class="minicols">
+			<div class="col abt-img">
+				<img src="C:\Users\write\OneDrive\Desktop\WebDesign\Images\polaroid.jpg" alt="About image">
+			</div>
+			<div class="col abt-txt">
+				<div class="txt">
+					<h3>About</h3>
+				</div>
+				<p>Savannah Massey is a poet and artist from Mississippi,
+				though she is currently based in Ohio as a student 
+				at Kenyon College. There, she is studying software engineering
+				and applied mathematics. She was an honorable mention in 
+				the 2025 Only Poems Poet of the Year Prize, as well as being
+				a YoungArts Award Winner With Distinction in Writing and Scholastic
+				Art & Writing National Medalist. Her work has appeared
+				in the <em>Polyphony Lit, Only Poems, Young Writers 
+				Journal</em> and elsewhere. Outside of writing, she enjoys
+				dance, painting and vocal performance.</p>
+			</div>
+		</div>
+		<!--break-->
+		<p></p>
+		<!--2nd sect in col-->
+		<div class="cont-box center">
+			<h3>Contact</h3>
+		</div>
+		<!--break-->
+		<p></p>
+		<div class="cont-box-bg">
+			<div class="cont-txt">
+				<p>Feel free to contact me for questions regarding publications, readings and interviews—or if you just want to chat!</p>
+			</div>
+			<div class="minicols">
+				<div class="col cont-txt">
+					<p>
+						Email: <a href="mailto:savannahm.writing@gmail.com">savannahm.writing@gmail.com</a>
+						<!--break-->
+						<p></p>
+						Instagram: <a href="https://instagram.com/savannahmassey12" target="_blank" rel="noopener">@savannahmassey12</a>
+					</p>
+				</div>
+				<div class="cont-img" aria-hidden="true">
+					<img src="C:\Users\write\OneDrive\Desktop\WebDesign\Images\envel.img.PNG" alt="Envelope Sketch">
+				</div>
+			</div>
+		</div>
+	</div>
+<!--Column 2: Featured Words-->
+	<div class="col">
+		<div class="feat-box center">
+			<h3>Featured Works</h3>
+		</div>
+		<br>
+		<div class="wrfeat-box-bg wrfeat-color-box">
+			<div class="wrfeat-txt">
+				<h3>Eden, Mississippi</h3>
+				<p style="line-height:1.0;">
+					On Sundays, we left screen doors that sang as they closed
+					<br>and went down to the river dividing the bare trees
+					<br>to baptize each other in the filthy water. We danced
+					<br>like we were famous and covered our day clothes in mud
+					<br>because that's what they were for. Once,
+					<br>we went farther than we were supposed to and found
+					<br>a starch white carcass stretched across the rocks. You faced
+					<br>away from me, shirt rolled to your shoulders...
+				</p>
+				<p><a href="file:///C:/Users/write/OneDrive/Desktop/WebDesign/Temp%20Page/eden.html">Read Full Poem</a></p>
+			</div>
+		</div>
+		<!--break-->
+		<p></p>
+		<!--2nd box in col-->
+		<div class="pfeat-box-bg pfeat-color-box">
+			<div class="bio pfeat-txt">
+				<p><h3>"MIDWAY"</h3><em>from photography collection <a href="file:///C:/Users/write/OneDrive/Desktop/WebDesign/Temp%20Page/portfolio.html">A Sunday Drive Through Lena</em></a></p>
+			</div>
+			<div class="pfeat-img">
+				<img src="C:\Users\write\Downloads\IMG_2795.jpg" alt="MIDWAY">
+			</div>
+		</div>
+	</div>
+</div>
+<p><br></p>
+</body>
+</html>
